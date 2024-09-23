@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Tips HTML</title>
+    <style>
+        .center {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;   
+                }       
+        video {
+                   width: 140px;
+                   height: 140px;
+                }
+        img {
+                width: 450px;
+                height: 450px;
+        }
+    </style>
+    <base target="_blank">
+</head>
+<body>
+    <div>
+        <h1>1. El atributo "loading=lazy".</h1>
+        <p>Se usa para retrasar la carga de la imagen hasta que el usuario se desplace hasta ella.</p>
+            <img src='Diseño.jpg' loading='lazy' alt='Diseño de Interfaces Web'> 
+    </div>
+    <div>
+        <h1>2. Enlaces de correo electrónico, llamadas y SMS.</h1>
+        <p>Para ello usamos el atributo href="mailto:{email}?subject={subject}&body={content}", href="tel:{phone}" href="sms:{phone}?body={content}""</p>
+            <a href="mailto:{email}?subject={subject}&body={content}">
+            Mandanos un correo.
+            </a>
+            <br>  
+            <a href="tel:{phone}">
+            Llámanos.
+            </a>
+            <br>          
+            <a href="sms:{phone}?body={content}">
+            Mandanos un mensaje.
+            </a>          
+    </div>
+    <div><h1>3. Atributo `start` de listas ordenadas.</h1>
+        <p>Para ello utilizar el atributo "start" para cambiar el punto de inicio de sus listas ordenadas.</p>
+            <ol start="1">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Go</li>
+                <li>C++</li>
+            </ol>
+    </div>
+    <div><h1>4. El elemento «metro».</h1>
+        <p>Puedes utilizar el elemento "meter" para mostrar cantidades. No se necesita JavaScript ni CSS.</p>
+            <label class="meter-label"  for="valor1">Bajo</label>
+            <meter id="valor1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
+            <label class="meter-label" for="valor2">Medio</label>
+            <meter id="valor2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+            <label class="meter-label" for="valor3">Alto</label>
+            <meter id="valor3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
+    </div>
+    <div>
+        <h1>5. Búsqueda nativa HTML.</h1>
+        <p>Para ello utilizar el atributo "multiple".</p>
+            <div class="search-wrapper">
+                <h3>
+                Búsqueda Nativa HTML
+                </h3>           
+            <input class="search-input" list="items">            
+            <datalist id="items">
+                <option value="Marko Denic">
+                <option value="FreeCodeCamp">
+                <option value="FreeCodeTools">
+                <option value="Web Development">
+                <option value="Web Developer">
+            </datalist>
+          </div>           
+    </div>
+    <div>
+        <h1>6. Elemento de conjunto de campos.</h1>
+        <p>Puede utilizar el elemento "fieldset" para agrupar varios controles y etiquetas "label" dentro de un formulario web.</p>
+            <form>
+                <fieldset>
+                    <legend>Elige tu lenguaje favorito</legend>
+                    <input type="radio" id="javascript" name="language">
+                    <label for="javascript">JavaScript</label><br/>
+                    <input type="radio" id="python" name="language">
+                    <label for="python">Python</label><br/>         
+                    <input type="radio" id="java" name="language">
+                    <label for="java">Java</label>
+                </fieldset>
+          </form>
+    </div>
+    <div><h1>7. Abridor de ventanas.</h1>
+        <p>Las páginas abiertas con target="_blank"permiten que la nueva página acceda a la original window.opener. Esto puede tener implicaciones de seguridad y rendimiento. Incluya rel="noopener"o rel="noreferrer"para evitar esto.</p>
+            <a href="https://markodenic.com/" target="_blank" rel="noopener">
+            Marko's website
+            </a>                
+    </div>
+    <div>
+        <h1>8. Elemento base.</h1>
+        <p>Si desea abrir todos los enlaces del documento en una nueva pestaña, puede utilizar el elemento "base".</p>
+            <div class="wrapper">
+                Este link abre en otra ventana: &nbsp;
+            <a href="https://freecodetools.org/">
+                Free Code Tools
+            </a>
+          
+            <p>
+              Leer más: <br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">
+              MDN Documentation
+            </a>
+            </p>
+            </div>
+    </div>
+    <div> 
+        <h1>9. Desactivación de caché de favicon.</h1>
+        <p>Para actualizar el favicon de su sitio web, puede forzar a los navegadores a descargar una nueva versión agregándolo ?v=2al nombre del archivo.
+           Esto es especialmente útil en producción para garantizar que los usuarios obtengan la nueva versión.</p>
+           <link rel="icon" href="/favicon.ico?v=2" /> 
+    </div>
+    <div>
+        <h1>10. El atributo `spellcheck`.</h1> 
+        <p>Utilice este atributo "spellcheck" para definir si se puede comprobar si el elemento tiene errores ortográficos.</p>
+            <label for="input1">spellcheck="true"</label>
+            <input type="text" id="input1" spellcheck="true">
+            <label for="input2">spellcheck="false"</label>
+            <input type="text" id="input2" spellcheck="false">
+    </div>
+    <div>
+        <h1>11. Controles deslizantes HTML nativos.</h1>
+        <p>Puedes usar "input type="range""" para crear controles deslizantes.</p>
+            <label for="volume">Volumen: </label>
+            <input type="range" id="volume" name="volume" min="0" max="20">
+            <label for="result">Tu elección: </label>
+            <input type="number" id="result" name="result">
+    </div>
+    <div> 
+        <h1>12. Acordeón HTML.</h1>
+        <p>Puede utilizar el elemento "details" para crear un acordeón HTML nativo.</p>
+            <div class="wrapper">
+            <details>
+              <summary>
+                Click para ver más.
+              </summary>
+          
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum perferendis eius. Adipisci velit et similique earum quas illo odio rerum optio, quis, expedita assumenda enim dicta aliquam porro maxime minima sed a ullam, aspernatur corporis.
+              </p>
+            </details>
+            </div>
+    </div>
+    <div>
+        <h1>13. Etiqueta `mark`.</h1>
+        <p>Puede utilizar la etiqueta <mark>"mark"</mark> para resaltar el texto.</p>
+            <mark>Este texto esta resaltado.</mark>
+    </div>
+    <div>
+        <h1>14. atributo `download`.</h1>
+        <p>Puede utilizar el atributo "download" en sus enlaces para descargar el archivo en lugar de navegar hasta él.</p>
+        <a href='path/to/file' download>
+            Descargar
+          </a>       
+    </div>
+    <div>
+        <h1>15. Consejo de rendimiento.</h1>
+        <p>Utilice el .webpformato de imagen para hacer las imágenes más pequeñas y mejorar el rendimiento de su sitio web.</p>
+            <picture>
+                <source srcset="img/Imagen.webp" type="image/webp">
+
+                <img src="Diseño.jpg" alt="Texto Alternativo!">
+            </picture>           
+    </div>
+    <div> 
+        <h1>16. Miniatura del vídeo.</h1>
+        <p>Utilice este atributo "poster" para especificar una imagen que se mostrará mientras se descarga el video o hasta que el usuario presione el botón de reproducción </p></div>
+        <video poster="Diseño.jpg">Imagen previa del Video</video>
+    <div> 
+        <h1>17. entradatype="search".</h1>
+        <p>Utilice el "type="search"" para sus entradas de búsqueda y obtendrá el botón "borrar" de forma gratuita.</p>
+                <form>
+                    <label for="text">Introducir Tipo Texto</label>
+                    <input type="text" id="text" name="text">
+                    <label for="search">Introducir Tipo Búsqueda</label>
+                    <input type="search" id="search" name="search">
+                </form>
+    </div>
+    <div> 
+        <h1>18. Etiqueta `pre`.</h1>
+        <p>Utilice la etiqueta "pre" para presentar el texto preformateado exactamente como está escrito en el archivo HTML.</p>
+           
+                <pre>
+                    <h3>
+                        Con la etiqueta pre
+                    </h3>
+                </pre>
+          <h3>
+                Sin la etiqueta pre
+          </h3> 
+          <p>
+                
+          </p>
+    </div>              
+</body>
+</html>

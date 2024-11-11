@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Layout Responsive</title>
+    
+<style>
+    *´{
+        box-sizing: border-box;
+
+
+    }
+    body {
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px;
+    background: goldenrod;
+    }
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background:darkslateblue;
+}
+.header h1 {
+  font-size: 50px;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content:space-between;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav1{
+    display: flex;
+}
+  /* Style the topnav links */
+.topnav a {
+ 
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+.row{
+    display:flex
+} 
+.main{
+    width:75% ;
+}
+.aside{
+    width: 25%;
+    background-color:#f1f1f1;
+  padding-left: 20px;
+}
+/* Fake image */
+.fakeimg {
+  background-color: darkgoldenrod;
+  max-width: 100%;
+  padding: 20px;
+  margin:10px
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: darkred;
+  margin-top: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+    img{
+        max-width: 100%;
+    }
+    @media  (max-width: 800px) {
+        body{
+            background-color: rgb(47, 54, 54);
+        }
+        .row{
+            flex-direction: column;
+        }
+        .main, .aside{
+            width: 100%;
+        }
+    }
+  
+
+
+    
+</style>
+<body>
+    <div class="header">
+        <h2>Esta es mi práctica de Responsive Layout</h2>
+        <p>Reajusta la página del navegador para observar los efectos.</p>
+      </div>
+      
+<div class="topnav">
+    <div class="topnav">
+        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog">Este link te lleva a w3schools</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+    
+    <a href="#" >Link apartado</a>
+  </div>
+  <div class="row">
+
+    <div class="main">
+        <div class="card">
+            <h2>Título de la card</h2>
+            <h5>Este es un título descriptivo</h5>
+            <div class="fakeimg" style="height:200px;">Aqui va una imagen</div>
+            <p>Algo de texto</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+          <div class="card">
+            <h2>Titulo de la card</h2>
+            <h5>Título descriptivo</h5>
+            <div class="fakeimg" style="height:200px;">Otra imagen</div>
+            <p>Algo de texto</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+    </div>
+    <div class="aside">
+        <div class="card">
+            <h2>Sobre esto</h2>
+            <div class="fakeimg" style="height:100px;">Imagen</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Un post</h3>
+            <div class="fakeimg"><p>Imagen</p></div>
+            <div class="fakeimg"><p>Imagen</p></div>
+            <div class="fakeimg"><p>Imagen</p></div>
+          </div>
+          <div class="card">
+            <h3>Sigueme</h3>
+            <p>Más Texto</p>
+          </div>
+    </div>
+
+
+  </div>
+  <div class="footer">
+    <h2 style="color:whitesmoke ;">Píe de página</h2>
+  </div>
+        
+</div>
+</body>
+
+</html>

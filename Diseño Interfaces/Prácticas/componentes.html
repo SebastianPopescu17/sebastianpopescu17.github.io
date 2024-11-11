@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Componentes</title>
+  <link rel="stylesheet" href="componentes.css">
+  
+  <!-- Font Awesome para iconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 1. Botones -->
+  <div class="container">
+    <h2>Botones</h2>
+    <a href="#" class="btn btn-primary">Botón Principal</a>
+    <a href="#" class="btn btn-secondary">Botón Secundario</a>
+    <a href="#" class="btn btn-danger">Botón de Peligro</a>
+    <button class="btn btn-animate">Botón con Animación</button>
+  </div>
+
+  <!-- 2. Alertas -->
+  <div class="container">
+    <h2>Alertas</h2>
+    <div class="alert alert-success">
+      <strong>Éxito!</strong> La operación fue exitosa.> 
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times</span>
+    </div>
+    <div class="alert alert-danger">
+      <strong>¡Error!</strong> Algo salió mal.
+    </div>
+    <div class="alert alert-info">
+      <strong>Información:</strong> Este es un mensaje informativo.
+    </div>
+    <div class="alert alert-warning">
+      <strong>Advertencia!</strong> Esto es una advertencia.
+    </div>
+  </div>
+
+  <!-- 3. Search Bar -->
+  <div class="container">
+    <h2>Barra de Búsqueda</h2>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Buscar...">
+      <button class="btn btn-primary">Buscar</button>
+    </div>
+  </div>
+  <div class="topnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <!-- Barra de búsqueda personalizada -->
+    <div class="search-container">
+      <input type="text" placeholder="Buscar..." class="search-input">
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+
+  <!-- 4. Botones con Iconos -->
+  <div class="container">
+    <h2>Botones con Iconos</h2>
+    <a href="#" class="btn btn-primary"><i class="fas fa-search"></i> Buscar</a>
+    <a href="#" class="btn btn-secondary"><i class="material-icons">home</i> Inicio</a>
+  </div>
+
+  <!-- 5. Social Media Buttons -->
+  <div class="container social-btns">
+    <h2>Botones de Redes Sociales</h2>
+    <a href="#" class="btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <a href="#" class="btn twitter"><i class="fab fa-twitter"></i> Twitter</a>
+    <a href="#" class="btn youtube"><i class="fab fa-youtube"></i> YouTube</a>
+  </div>
+
+  <!-- 6. Botones de Next y Previous -->
+  <div class="container nav-btns">
+    <h2>Botones de Navegación</h2>
+    <a href="#" class="btn prev"><i class="fas fa-arrow-left"></i> Previous</a>
+    <a href="#" class="btn next">Next <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <!-- 7. Product Cards -->
+  <div class="container">
+    <h2>Tarjetas de Producto</h2>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x200" alt="Producto 1" class="product-img">
+      <h3 class="product-name">Producto 1</h3>
+      <p class="product-description">Descripción breve del producto.</p>
+      <button class="btn btn-primary">Comprar</button>
+    </div>
+    <div class="product-card product-card-secondary">
+      <img src="https://via.placeholder.com/200x200" alt="Producto 2" class="product-img">
+      <h3 class="product-name">Producto 2</h3>
+      <p class="product-description">Descripción breve del producto.</p>
+      <button class="btn btn-secondary">Ver más</button>
+    </div>
+  </div>
+
+  <!-- 8. Tab Headers -->
+  <div class="container">
+    <h2>Encabezados de Pestañas</h2>
+    <div class="tab-header">
+      <button class="tab-btn active">Tab 1</button>
+      <button class="tab-btn">Tab 2</button>
+      <button class="tab-btn">Tab 3</button>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane active">Contenido de Tab 1</div>
+      <div class="tab-pane">Contenido de Tab 2</div>
+      <div class="tab-pane">Contenido de Tab 3</div>
+    </div>
+  </div>
+
+</body>
+</html>

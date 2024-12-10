@@ -1,0 +1,127 @@
+/* Contenedor general de separadores */
+.separadores-container {
+  display: flex;
+  flex-direction: column;
+  gap: $margin-medium;
+  margin: $margin-large auto; 
+  max-width: 1200px; 
+  width: 100%;
+}
+
+/* Separador base */
+.separador {
+  width: 100%; 
+  max-width: 1200px; 
+  margin: $margin-medium auto; 
+  border-radius: $border-radius; 
+  color: red;
+}
+
+/* Separador Línea Completo */
+.separador-linea-completo {
+  @extend .separador;
+  height: 4px;
+  background-color: $primary-color;
+  text-align: center;
+  font-size: $cuerpo-mediano; 
+  box-shadow: $box-shadow-light;
+}
+
+/* Separador Doble Línea */
+.separador-doble {
+  @extend .separador;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.separador-doble::before,
+.separador-doble::after {
+  content: '';
+  height: 4px;
+  background-color: $fourth-color;
+  flex-grow: 1;
+}
+
+/* Separador Estilo Ondas */
+.separador-ondas {
+  @extend .separador;
+  height: 30px;
+  background: linear-gradient(135deg, $primary-color 25%, transparent 25%) -50px 0,
+              linear-gradient(225deg, $primary-color 25%, transparent 25%) -50px 0,
+              linear-gradient(45deg, $primary-color 25%, transparent 25%) 0px 0,
+              linear-gradient(-45deg, $primary-color 25%, transparent 25%) 0px 0;
+  background-size: 50px 50px;
+  background-repeat: repeat;
+  border-radius: 8px;
+}
+
+/* Separador Con Sombra */
+.separador-sombra {
+  @extend .separador;
+  height: 12px;
+  background-color: $fifth-color;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Separador Con Fondo de Color */
+.separador-color {
+  @extend .separador;
+  height: 12px;
+  background-color: $tertiary-color;
+}
+
+/* Separador Con Icono */
+.separador-icono {
+  @extend .separador;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.separador-icono::before {
+  content: '\f07b';
+  font-family: 'FontAwesome';
+  font-size: 40px;
+  color: $primary-color;
+}
+
+.separador-icono::after {
+  content: '';
+  flex-grow: 1;
+  height: 4px;
+  background-color: $primary-color;
+}
+
+/* Separador Estrecho */
+.separador-estrecho {
+  @extend .separador;
+  width: 30vw; /* Ancho más pequeño */
+  height: 4px;
+  background-color: $primary-color;
+}
+
+/* Separador Con Bordes Redondeados */
+.separador-borde-redondeado {
+  @extend .separador;
+  width: 40vw;
+  height: 10px;
+  background-color: $fifth-color;
+  border-radius: 50px;
+}
+
+/* Separador Con Fondo Gradiente */
+.separador-gradiente {
+  @extend .separador;
+  height: 8px;
+  background: linear-gradient(to right, $secondary-color, $fourth-color, $fifth-color);
+}
+
+/* Separador Con Cuadrícula */
+.separador-cuadricula {
+  @extend .separador;
+  height: 2px;
+  background-image: repeating-linear-gradient(45deg, $fourth-color, $fourth-color 10px, transparent 10px, transparent 20px);
+}

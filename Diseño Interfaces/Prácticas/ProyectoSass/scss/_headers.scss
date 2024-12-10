@@ -1,0 +1,154 @@
+// Header Simple con Logo y Navegación
+.cabecera-simple {
+    background-color: $primary-color;
+    color: $fuente-secundaria;
+    font-family: $primary-font;
+    padding: $padding-medium;
+
+    .logo h1 {
+        font-size: $titulo-grande;
+    }
+
+    .navegacion {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: $margin-medium;
+            padding: 0;
+            margin-top: $margin-small;
+
+            li {
+                a {
+                    color: $fuente-secundaria;
+                    text-decoration: none;
+                    font-size: $cuerpo-mediano;
+                    transition: $transition-fast;
+
+                    &:hover {
+                        color: $light-primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Header con Fondo de Color y Botón de Llamada a la Acción
+.cabecera-fondo-color {
+    background-color: $secondary-color;
+    color: $fuente-secundaria;
+    text-align: center;
+    padding: $padding-large;
+
+    .contenido-cabecera h1 {
+        font-size: $titulo-grande;
+    }
+
+    .contenido-cabecera p {
+        font-size: $cuerpo-mediano;
+        margin-top: $margin-small;
+    }
+
+    .btn-accion {
+        background-color: $tertiary-color;
+        color: $fuente-secundaria;
+        padding: $padding-small $padding-medium;
+        border: none;
+        border-radius: $border-radius;
+        font-size: $cuerpo-grande;
+        cursor: pointer;
+        transition: $transition-fast;
+
+        &:hover {
+            background-color: $light-tertiary-color;
+        }
+    }
+}
+
+// Header con Navegación Sticky y Iconos Sociales
+.cabecera-sticky {
+    background-color: $fourth-color;
+    color: $fuente-secundaria;
+    position: sticky;
+    top: 0;
+    padding: $padding-small;
+    z-index: 100;
+
+    .logo h1 {
+        font-size: $titulo-mediano;
+    }
+
+    .navegacion {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: $margin-medium;
+            padding: 0;
+            margin-top: $margin-small;
+
+            li {
+                a {
+                    color: $fuente-secundaria;
+                    text-decoration: none;
+                    font-size: $cuerpo-mediano;
+                    transition: $transition-fast;
+
+                    &:hover {
+                        color: $light-fourth-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .redes-sociales {
+        display: flex;
+        gap: $margin-small;
+        margin-top: $margin-small;
+
+        a {
+            color: $fuente-secundaria;
+            text-decoration: none;
+            font-size: $titulo-mediano;
+
+            &:hover {
+                color: $light-secondary-color;
+            }
+        }
+    }
+}
+
+// Header con Imagen de Fondo y Navegación con Efecto Hover
+.cabecera-imagen {
+    background: url('https://picsum.photos/200/200?random=3') no-repeat center center/cover;
+    color: $fuente-secundaria;
+    padding: $padding-large;
+    text-align: center;
+
+    .contenido-cabecera h1 {
+        font-size: $titulo-grande;
+    }
+
+    .navegacion {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: $margin-medium;
+            padding: 0;
+            margin-top: $margin-small;
+
+            li {
+                a {
+                    color: $fuente-secundaria;
+                    text-decoration: none;
+                    font-size: $cuerpo-mediano;
+                    transition: $transition-fast;
+
+                    &:hover {
+                        color: $light-primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

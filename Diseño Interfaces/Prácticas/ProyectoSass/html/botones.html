@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Framework</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="principal">
+        <h1>Mi Framework</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="barranav">
+        <ul>
+            <li><a href="alertas.html" class="nav-item">Alertas </a></li>
+            <li><a href="cards.html" class="nav-item">Cards </a></li>
+            <li><a href="separadores.html" class="nav-item">Separadores </a></li>
+            <li><a href="iconos.html" class="nav-item">Iconos </a></li>
+            <li><a href="loaders.html" class="nav-item">Loaders </a></li>
+            <li><a href="botones.html" class="nav-item"> Botones</a></li>
+            <li><a href="navbars.html" class="nav-item"> Navbars</a></li>
+            <li><a href="sliders.html" class="nav-item"> Sliders</a></li>
+            <li><a href="tabs.html" class="nav-item">Tabs</a></li>
+            <li><a href="inputs.html" class="nav-item">Inputs</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Contenedor de Botones -->
+        <section class="buttons-container">
+
+            <!-- Botones Estándar -->
+            <div class="button-group">
+                <h2>Botones Estándar</h2>
+                <button class="aegov-btn btn-success" type="button">Éxito</button>
+                <button class="aegov-btn btn-danger" type="button">Error</button>
+                <button class="aegov-btn btn-warning" type="button">Advertencia</button>
+                <button class="aegov-btn btn-info" type="button">Información</button>
+            </div>
+            <pre>
+        <code>
+            &lt;button class="aegov-btn btn-success" type="button"&gt;Éxito&lt;/button&gt;
+            &lt;button class="aegov-btn btn-danger" type="button"&gt;Error&lt;/button&gt;
+            &lt;button class="aegov-btn btn-warning" type="button"&gt;Advertencia&lt;/button&gt;
+            &lt;button class="aegov-btn btn-info" type="button"&gt;Información&lt;/button&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+            <!-- Botones con Tamaños -->
+            <div class="button-group">
+                <h2>Botones con Tamaños</h2>
+                <button class="aegov-btn btn-lg" type="button">Botón Grande</button>
+                <button class="aegov-btn btn-base" type="button">Botón Base</button>
+                <button class="aegov-btn btn-sm" type="button">Botón Pequeño</button>
+                <button class="aegov-btn btn-xs" type="button">Botón Extra Pequeño</button>
+            </div>
+            <pre>
+        <code>
+            &lt;button class="aegov-btn btn-lg" type="button"&gt;Botón Grande&lt;/button&gt;
+            &lt;button class="aegov-btn btn-base" type="button"&gt;Botón Base&lt;/button&gt;
+            &lt;button class="aegov-btn btn-sm" type="button"&gt;Botón Pequeño&lt;/button&gt;
+            &lt;button class="aegov-btn btn-xs" type="button"&gt;Botón Extra Pequeño&lt;/button&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+            <!-- Botones Outline -->
+            <div class="button-group">
+                <h2>Botones Outline</h2>
+                <button class="aegov-btn btn-outline btn-lg" type="button">Botón Grande</button>
+                <button class="aegov-btn btn-outline btn-base" type="button">Botón Base</button>
+                <button class="aegov-btn btn-outline btn-sm" type="button">Botón Pequeño</button>
+                <button class="aegov-btn btn-outline btn-xs" type="button">Botón Extra Pequeño</button>
+            </div>
+            <pre>
+        <code>
+            &lt;button class="aegov-btn btn-outline btn-lg" type="button"&gt;Botón Grande&lt;/button&gt;
+            &lt;button class="aegov-btn btn-outline btn-base" type="button"&gt;Botón Base&lt;/button&gt;
+            &lt;button class="aegov-btn btn-outline btn-sm" type="button"&gt;Botón Pequeño&lt;/button&gt;
+            &lt;button class="aegov-btn btn-outline btn-xs" type="button"&gt;Botón Extra Pequeño&lt;/button&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+            <!-- Botones con Iconos -->
+            <div class="button-group">
+                <h2>Botón con Icono</h2>
+                <button class="aegov-btn btn-success aegov-btn-icon" type="button">
+                    <span class="icon">✅</span> Éxito
+                </button>
+                <button class="aegov-btn btn-danger aegov-btn-icon" type="button">
+                    <span class="icon">❌</span> Error
+                </button>
+                <button class="aegov-btn btn-warning aegov-btn-icon" type="button">
+                    <span class="icon">⚠️</span> Advertencia
+                </button>
+                <button class="aegov-btn btn-info aegov-btn-icon" type="button">
+                    <span class="icon">ℹ️</span> Información
+                </button>
+            </div>
+            <pre>
+        <code>
+            &lt;button class="aegov-btn btn-success aegov-btn-icon" type="button"&gt;
+                &lt;span class="icon"&gt;✅&lt;/span&gt; Éxito
+            &lt;/button&gt;
+            &lt;button class="aegov-btn btn-danger aegov-btn-icon" type="button"&gt;
+                &lt;span class="icon"&gt;❌&lt;/span&gt; Error
+            &lt;/button&gt;
+            &lt;button class="aegov-btn btn-warning aegov-btn-icon" type="button"&gt;
+                &lt;span class="icon"&gt;⚠️&lt;/span&gt; Advertencia
+            &lt;/button&gt;
+            &lt;button class="aegov-btn btn-info aegov-btn-icon" type="button"&gt;
+                &lt;span class="icon"&gt;ℹ️&lt;/span&gt; Información
+            &lt;/button&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="pie">
+            <section class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Hosting</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Legacy</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>Careers</h3>
+                <ul>
+                    <li><a href="#">Job openings</a></li>
+                    <li><a href="#">Employee success</a></li>
+                    <li><a href="#">Benefits</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>

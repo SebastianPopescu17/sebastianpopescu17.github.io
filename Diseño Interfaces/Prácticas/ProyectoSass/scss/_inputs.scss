@@ -1,0 +1,97 @@
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input Estándar */
+.input-standard {
+  padding: $padding-medium;
+  font-size: 16px;
+  border: 1px solid $primary-color;
+  border-radius: $border-radius;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-standard:focus {
+  border-color: $secondary-color;
+}
+
+/* Input con Icono */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding: $padding-medium 40px 10px 10px;
+  font-size: 16px;
+  border: 1px solid $primary-color;
+  border-radius: $border-radius;
+  outline: none;
+  width: 100%;
+}
+
+.input-with-icon .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: $primary-color;
+}
+
+/* Input Relleno */
+.input-filled {
+  padding: $padding-medium;
+  font-size: 16px;
+  background-color: $light-primary-color;
+  border: 1px solid $primary-color;
+  border-radius: $border-radius;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.input-filled:focus {
+  background-color: $light-secondary-color;
+}
+
+/* Input con Bordes Redondeados */
+.input-rounded {
+  padding: $padding-medium;
+  font-size: 16px;
+  border: 1px solid $primary-color;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-rounded:focus {
+  border-color: $tertiary-color;
+}
+
+/* Input con Fondo de Color */
+.input-colored {
+  padding: $padding-medium;
+  font-size: 16px;
+  background-color: $fourth-color;
+  border: 1px solid $primary-color;
+  border-radius: $border-radius;
+  color: white;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.input-colored:focus {
+  background-color: $light-fourth-color;
+}

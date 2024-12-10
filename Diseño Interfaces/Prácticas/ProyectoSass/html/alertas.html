@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Framework</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="principal">
+        <h1>Mi Framework</h1>
+    </header>
+    <!-- Navegación -->
+    <nav class="barranav">
+        <ul>
+            <li><a href="alertas.html" class="nav-item">Alertas </a></li>
+            <li><a href="cards.html" class="nav-item">Cards </a></li>
+            <li><a href="separadores.html" class="nav-item">Separadores </a></li>
+            <li><a href="iconos.html" class="nav-item">Iconos </a></li>
+            <li><a href="loaders.html" class="nav-item">Loaders </a></li>
+            <li><a href="botones.html" class="nav-item"> Botones</a></li>
+            <li><a href="navbars.html" class="nav-item"> Navbars</a></li>
+            <li><a href="sliders.html" class="nav-item"> Sliders</a></li>
+            <li><a href="tabs.html" class="nav-item">Tabs</a></li>
+            <li><a href="inputs.html" class="nav-item">Inputs</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Alertas -->
+        
+        <section class="alertas">
+            <h2>Alertas</h2>
+            
+            <!-- Alerta de Éxito -->
+            <div class="alert success">
+                <strong>¡Éxito!</strong> Tus datos se han guardado correctamente.
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert success"&gt;
+                        &lt;strong&gt;¡Éxito!&lt;/strong&gt; Tus datos se han guardado correctamente.
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta de Advertencia -->
+            <div class="alert warning">
+                <i class="icon-exclamation-triangle"></i>
+                <strong>¡Advertencia!</strong> Por favor, revisa tu entrada.
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert warning"&gt;
+                        &lt;i class="icon-exclamation-triangle"&gt;&lt;/i&gt;
+                        &lt;strong&gt;¡Advertencia!&lt;/strong&gt; Por favor, revisa tu entrada.
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta de Error -->
+            <div class="alert danger">
+                <strong>¡Error!</strong> Algo salió mal.
+                <button class="close-alert">X</button>
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert danger"&gt;
+                        &lt;strong&gt;¡Error!&lt;/strong&gt; Algo salió mal.
+                        &lt;button class="close-alert"&gt;X&lt;/button&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta de Información -->
+            <div class="alert info">
+                <strong>¡Información!</strong> Aquí tienes información importante.
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert info"&gt;
+                        &lt;strong&gt;¡Información!&lt;/strong&gt; Aquí tienes información importante.
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta de Éxito Grande -->
+            <div class="alert success large">
+                <strong>¡Éxito!</strong> Tu operación se completó con éxito.
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert success large"&gt;
+                        &lt;strong&gt;¡Éxito!&lt;/strong&gt; Tu operación se completó con éxito.
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta Personalizada -->
+            <div class="alert custom">
+                <strong>Aviso:</strong> Consulta nuestras <a href="#">últimas actualizaciones</a>.
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert custom"&gt;
+                        &lt;strong&gt;Aviso:&lt;/strong&gt; Consulta nuestras &lt;a href="#"&gt;últimas actualizaciones&lt;/a&gt;.
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta con Icono de Información -->
+            <div class="alert alert-info">
+                <div class="alert-icon">ℹ️</div>
+                <div class="alert-content">
+                    <p>La conferencia comienza a las 10:00 AM en el Salón B. ¡No llegues tarde!</p>
+                </div>
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert alert-info"&gt;
+                        &lt;div class="alert-icon"&gt;ℹ️&lt;/div&gt;
+                        &lt;div class="alert-content"&gt;
+                            &lt;p&gt;La conferencia comienza a las 10:00 AM en el Salón B. ¡No llegues tarde!&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta con Icono de Error -->
+            <div class="alert alert-error">
+                <div class="alert-icon">❌</div>
+                <div class="alert-content">
+                    <p>No se pudo conectar al servidor. Inténtalo más tarde o contacta con soporte.</p>
+                </div>
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert alert-error"&gt;
+                        &lt;div class="alert-icon"&gt;❌&lt;/div&gt;
+                        &lt;div class="alert-content"&gt;
+                            &lt;p&gt;No se pudo conectar al servidor. Inténtalo más tarde o contacta con soporte.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta con Icono de Éxito -->
+            <div class="alert alert-success">
+                <div class="alert-icon">✅</div>
+                <div class="alert-content">
+                    <p>¡Tu pago se procesó correctamente! Muchas gracias.</p>
+                </div>
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert alert-success"&gt;
+                        &lt;div class="alert-icon"&gt;✅&lt;/div&gt;
+                        &lt;div class="alert-content"&gt;
+                            &lt;p&gt;¡Tu pago se procesó correctamente! Muchas gracias.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Alerta con Icono de Advertencia -->
+            <div class="alert alert-warning">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <p>Tu contraseña expirará en 3 días. Considera actualizarla ahora.</p>
+                </div>
+            </div>
+            <pre>
+                <code>
+                    &lt;div class="alert alert-warning"&gt;
+                        &lt;div class="alert-icon"&gt;⚠️&lt;/div&gt;
+                        &lt;div class="alert-content"&gt;
+                            &lt;p&gt;Tu contraseña expirará en 3 días. Considera actualizarla ahora.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="pie">
+            <section class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Hosting</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Legacy</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>Careers</h3>
+                <ul>
+                    <li><a href="#">Job openings</a></li>
+                    <li><a href="#">Employee success</a></li>
+                    <li><a href="#">Benefits</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>

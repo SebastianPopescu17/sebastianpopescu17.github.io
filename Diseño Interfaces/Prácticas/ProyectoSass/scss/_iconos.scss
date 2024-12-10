@@ -1,0 +1,79 @@
+
+// Colores y estilos de iconos
+$icon-styles: (
+  "linear": (color: $primary-color, bg: transparent, hover-bg: $light-primary-color),
+  "filled": (color: $fuente-terciaria, bg: $secondary-color, hover-bg: $tertiary-color),
+  "circular": (color: $fuente-terciaria, bg: $fourth-color, hover-bg: $light-fourth-color),
+  "square": (color: $fuente-secundaria, bg: $fifth-color, hover-bg: $light-fifth-color),
+  "outline": (color: $primary-color, bg: transparent, hover-bg: $light-primary-color, border: 2px solid $primary-color),
+  "round-filled": (color: $fuente-secundaria, bg: $tertiary-color, hover-bg: $light-tertiary-color),
+);
+
+// Mixin para los iconos con borde
+@mixin icon-style($color, $bg, $hover-bg, $size, $border: none) {
+  color: $color;
+  background-color: $bg;
+  width: $size;   
+  height: $size;  
+  padding: 10px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $cuerpo-grande;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: $border-radius;
+  border: $border;
+  text-align: center;
+  overflow: hidden;  
+  
+  &:hover {
+    background-color: $hover-bg;
+  }
+
+  span {
+    margin-top: 5px;
+    font-size: $cuerpo-pequeño;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($primary-color, 0.5); 
+  }
+}
+
+// Estilo para los iconos dentro del contenedor
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;  
+  justify-content: center;
+  padding: $padding-large;  
+  margin: $margin-large auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+// Generar estilos para cada tipo de ícono
+@each $type, $properties in $icon-styles {
+  $color: map-get($properties, color);
+  $bg: map-get($properties, bg);
+  $hover-bg: map-get($properties, hover-bg);
+  $border: map-get($properties, border, none); 
+
+  .icon.#{$type} {
+    @include icon-style($color, $bg, $hover-bg, 108px, $border); 
+
+    &.circular {
+      border-radius: 50%;
+    }
+
+    &.square {
+      border-radius: 0; 
+    }
+  }
+}
+
+

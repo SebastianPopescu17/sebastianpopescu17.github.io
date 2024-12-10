@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Estilo global del body
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: $fuente-primaria;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin:0 ;
+  padding:0 ;
+}
+
+// Contenedor principal
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1400px; 
+  margin: $margin-small auto;
+  padding: $padding-medium;
+  box-sizing: border-box; 
+  height: 80vh;
+  
+}
+
+pre{
+  background-color: rgb(207, 199, 199);
+  border: 5px 5px black;
+}
+// Estilos para el header
+header.principal {
+  background-color: $primary-color;
+  padding: $padding-medium;
+  text-align: center;
+  width: 100%; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  max-width: 1400px; 
+  position: relative;
+  height: 5vh;
+ 
+  h1 {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+
+// Estilos del navbar
+.barranav {
+  background-color: $light-primary-color;
+  padding: $padding-small $padding-medium;
+  width: 100%;  
+  max-width: 1400px; 
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;  
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: $margin-small;
+    justify-content: center;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    color: $fuente-primaria;
+    padding: $padding-small $padding-medium;
+    border-radius: $border-radius;
+    transition: $transition-fast;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}
+
+
+// Estilos del footer
+footer {
+  background-color: $secondary-color;
+  color: $fuente-terciaria;
+  padding: $padding-medium;
+  width: 100%; 
+  max-width: 1400px; 
+  margin: auto; 
+  box-sizing: border-box; 
+  margin-top: auto; 
+  position: relative;
+  height: 10vh;
+  
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $margin-small;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+ 
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px; 
+  margin-bottom: $margin-small;
+
+  h3 {
+    margin-bottom: $margin-small;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+      margin-bottom: 5px;
+
+      a {
+        text-decoration: none;
+        color: $fuente-secundaria;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

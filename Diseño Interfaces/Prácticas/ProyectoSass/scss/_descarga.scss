@@ -1,0 +1,128 @@
+// Botón para HTML
+.boton-html {
+    padding: $padding-medium;
+    border: none;
+    border-radius: $border-radius;
+    font-size: $cuerpo-mediano;
+    font-weight: bold;
+    color: $fuente-secundaria; // Texto blanco
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $primary-color; // Azul para HTML
+    transition: all $transition-fast;
+    box-shadow: $box-shadow-light;
+    display: inline-block;
+    text-align: center;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+        transform: translateY(-3px);
+        box-shadow: $box-shadow-medium;
+    }
+
+    &:active {
+        background-color: darken($primary-color, 15%);
+        transform: scale(0.98);
+    }
+}
+
+// Botón para CSS
+.boton-css {
+    padding: $padding-medium;
+    border: none;
+    border-radius: $border-radius;
+    font-size: $cuerpo-mediano;
+    font-weight: bold;
+    color: $fuente-secundaria; // Texto blanco
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $secondary-color; // Amarillo para CSS
+    transition: all $transition-fast;
+    box-shadow: $box-shadow-light;
+    display: inline-block;
+    text-align: center;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+        transform: translateY(-3px);
+        box-shadow: $box-shadow-medium;
+    }
+
+    &:active {
+        background-color: darken($secondary-color, 15%);
+        transform: scale(0.98);
+    }
+}
+
+// Botón para SCSS
+.boton-scss {
+    padding: $padding-medium;
+    border: none;
+    border-radius: $border-radius;
+    font-size: $cuerpo-mediano;
+    font-weight: bold;
+    color: $fuente-secundaria; // Texto blanco
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $tertiary-color; // Morado para SCSS
+    transition: all $transition-fast;
+    box-shadow: $box-shadow-light;
+    display: inline-block;
+    text-align: center;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: darken($tertiary-color, 10%);
+        transform: translateY(-3px);
+        box-shadow: $box-shadow-medium;
+    }
+
+    &:active {
+        background-color: darken($tertiary-color, 15%);
+        transform: scale(0.98);
+    }
+}
+
+// Botón para JS
+.boton-js {
+    padding: $padding-medium;
+    border: none;
+    border-radius: $border-radius;
+    font-size: $cuerpo-mediano;
+    font-weight: bold;
+    color: $fuente-secundaria; // Texto blanco
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $fourth-color; // Verde para JS
+    transition: all $transition-fast;
+    box-shadow: $box-shadow-light;
+    display: inline-block;
+    text-align: center;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: darken($fourth-color, 10%);
+        transform: translateY(-3px);
+        box-shadow: $box-shadow-medium;
+    }
+
+    &:active {
+        background-color: darken($fourth-color, 15%);
+        transform: scale(0.98);
+    }
+}
+

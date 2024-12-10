@@ -1,0 +1,150 @@
+// Navbar general
+.navbar {
+    width: 100%;
+    background-color: $light-primary-color;
+    padding: $padding-small $padding-medium;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: $margin-small;
+        align-items: center;
+
+        li {
+            a {
+                text-decoration: none;
+                color: $fuente-primaria;
+                padding: $padding-small $padding-medium;
+                border-radius: $border-radius;
+                transition: $transition-fast;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// Navbar hamburguesa
+.navbar-hamburger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar-actions {
+        display: flex;
+        gap: $margin-small;
+        align-items: center;
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: $light-primary-color;
+        padding: $padding-medium;
+
+        li {
+            margin: $margin-small 0;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: $fuente-primaria;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        &.show-menu {
+            display: flex;
+        }
+    }
+}
+
+// Navbar con buscador
+.navbar-search {
+    display: flex;
+    gap: $margin-small;
+
+    form {
+        display: flex;
+        align-items: center;
+        gap: $padding-small;
+
+        input {
+            padding: $padding-small;
+            border: 1px solid $fuente-secundaria;
+            border-radius: $border-radius;
+        }
+
+        button {
+            padding: $padding-small $padding-medium;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            border-radius: $border-radius;
+
+            &:hover {
+                background-color: $light-primary-color;
+            }
+        }
+    }
+}
+
+// Navbar con iconos
+.navbar-icons {
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            gap: 0;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// Navbar con logo y buscador
+.navbar-logo-search {
+    display: flex;
+    gap: $margin-small;
+    align-items: center;
+
+    .logo {
+        width: 120px; 
+        height: 50px; 
+        background-image: url('https://picsum.photos/120/50'); 
+        background-size: cover; 
+        background-position: center; 
+        border-radius: 5px; 
+    }
+
+    .custom-element {
+        background-color: $light-secondary-color;
+        padding: $padding-small $padding-medium;
+        border-radius: $border-radius;
+    }
+}

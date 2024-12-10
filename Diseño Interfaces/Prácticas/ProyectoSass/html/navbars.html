@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Framework</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="principal">
+        <h1>Mi Framework</h1>
+    </header>
+    <!-- Navegación -->
+    <nav class="barranav">
+        <ul>
+            <li><a href="alertas.html" class="nav-item">Alertas </a></li>
+            <li><a href="cards.html" class="nav-item">Cards </a></li>
+            <li><a href="separadores.html" class="nav-item">Separadores </a></li>
+            <li><a href="iconos.html" class="nav-item">Iconos </a></li>
+            <li><a href="loaders.html" class="nav-item">Loaders </a></li>
+            <li><a href="botones.html" class="nav-item"> Botones</a></li>
+            <li><a href="navbars.html" class="nav-item"> Navbars</a></li>
+            <li><a href="sliders.html" class="nav-item"> Sliders</a></li>
+            <li><a href="tabs.html" class="nav-item">Tabs</a></li>
+            <li><a href="inputs.html" class="nav-item">Inputs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Navbar con buscador -->
+<nav class="navbar navbar-search">
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+    <form>
+        <input type="search" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+    </form>
+</nav>
+<pre>
+    <code>
+        &lt;nav class="navbar navbar-search"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;form&gt;
+                &lt;input type="search" placeholder="Buscar..."&gt;
+                &lt;button type="submit"&gt;Buscar&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/nav&gt;
+    </code>
+</pre>
+<div class="separador-cuadricula"></div>
+
+<!-- Navbar con iconos -->
+<nav class="navbar navbar-icons">
+    <ul>
+        <li><i class="icon fa fa-home"></i><a href="#">Inicio</a></li>
+        <li><i class="icon fa fa-cogs"></i><a href="#">Servicios</a></li>
+        <li><i class="icon fa fa-envelope"></i><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+<pre>
+    <code>
+        &lt;nav class="navbar navbar-icons"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;i class="icon fa fa-home"&gt;&lt;/i&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;i class="icon fa fa-cogs"&gt;&lt;/i&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;i class="icon fa fa-envelope"&gt;&lt;/i&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    </code>
+</pre>
+<div class="separador-cuadricula"></div>
+
+<!-- Navbar con logo, buscador y otro elemento -->
+<nav class="navbar navbar-logo-search">
+    <div class="logo"></div>
+    <form>
+        <input type="search" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+    </form>
+    <div class="custom-element">Oferta Especial</div>
+</nav>
+<pre>
+    <code>
+        &lt;nav class="navbar navbar-logo-search"&gt;
+            &lt;div class="logo"&gt;&lt;/div&gt;
+            &lt;form&gt;
+                &lt;input type="search" placeholder="Buscar..."&gt;
+                &lt;button type="submit"&gt;Buscar&lt;/button&gt;
+            &lt;/form&gt;
+            &lt;div class="custom-element"&gt;Oferta Especial&lt;/div&gt;
+        &lt;/nav&gt;
+    </code>
+</pre>
+<div class="separador-cuadricula"></div>
+
+<!-- Navbar con menú hamburguesa -->
+<nav class="navbar navbar-hamburger">
+    <div class="navbar-brand">
+        <a href="#">Mi Logo</a>
+    </div>
+    <div class="navbar-actions">
+        <a href="#" class="navbar-link">Ayuda</a>
+        <button class="menu-toggle">☰</button>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+<pre>
+    <code>
+        &lt;nav class="navbar navbar-hamburger"&gt;
+            &lt;div class="navbar-brand"&gt;
+                &lt;a href="#"&gt;Mi Logo&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="navbar-actions"&gt;
+                &lt;a href="#" class="navbar-link"&gt;Ayuda&lt;/a&gt;
+                &lt;button class="menu-toggle"&gt;☰&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;ul class="nav-menu"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    </code>
+</pre>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="pie">
+            <section class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Hosting</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Legacy</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>Careers</h3>
+                <ul>
+                    <li><a href="#">Job openings</a></li>
+                    <li><a href="#">Employee success</a></li>
+                    <li><a href="#">Benefits</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let menuToggle = document.querySelector(".menu-toggle");
+            let navMenu = document.querySelector(".nav-menu");
+            let body = document.querySelector("body");
+
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener("click", () => {
+                    navMenu.classList.toggle("show-menu");
+                    body.classList.toggle("menu-open"); // Agregamos la clase para ajustar el padding del main
+                });
+            } else {
+                console.error("No se encontró el botón de menú o la lista de navegación.");
+            }
+        });
+    </script>
+</body>
+
+</html>

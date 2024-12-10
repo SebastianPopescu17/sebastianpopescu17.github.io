@@ -1,0 +1,64 @@
+// Mapa de colores para alertas
+$alert-colors: (
+  success: ($light-fourth-color, $fourth-color, $fuente-terciaria),
+  warning: ($light-secondary-color, $secondary-color, $fuente-secundaria),
+  danger: ($light-tertiary-color, $tertiary-color, $fuente-terciaria),
+  info: ($light-secondary-color, $secondary-color, $fuente-primaria),
+  custom: ($light-fifth-color, $fifth-color, $fuente-terciaria)
+);
+
+// Estilo base para todas las alertas
+.alert {
+  padding: 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-family: $primary-font;
+  font-size: $cuerpo-pequeño;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: $fuente-primaria;
+
+  // Icono y contenido
+  .alert-icon {
+    margin-right: 12px;
+    font-size: 20px;
+    align-self: center;
+  }
+  
+  .alert-content {
+    flex: 1;
+    color: inherit;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .close-alert {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  // Variantes por tipo de alerta
+  @each $type, $colors in $alert-colors {
+    &.#{$type}, &.alert-#{$type} { 
+      background-color: nth($colors, 1); 
+      border-color: nth($colors, 2);    
+      color: nth($colors, 3);          
+  }
+
+  // Variantes para clases adicionales
+  &.large {
+    font-size: $cuerpo-mediano;
+    padding: 20px;
+  }
+}
+}

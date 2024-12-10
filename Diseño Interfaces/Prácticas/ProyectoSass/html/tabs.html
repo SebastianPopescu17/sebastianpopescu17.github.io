@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Framework</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="principal">
+            <h1>Mi Framework</h1>
+        </header>
+        <!-- Navegación -->
+        <nav class="barranav">
+            <ul>
+                <li><a href="alertas.html" class="nav-item">Alertas </a></li>
+                <li><a href="cards.html" class="nav-item">Cards </a></li>
+                <li><a href="separadores.html" class="nav-item">Separadores
+                    </a></li>
+                <li><a href="iconos.html" class="nav-item">Iconos </a></li>
+                <li><a href="loaders.html" class="nav-item">Loaders </a></li>
+                <li><a href="botones.html" class="nav-item"> Botones</a></li>
+                <li><a href="navbars.html" class="nav-item"> Navbars</a></li>
+                <li><a href="sliders.html" class="nav-item"> Sliders</a></li>
+                <li><a href="tabs.html" class="nav-item">Tabs</a></li>
+                <li><a href="inputs.html" class="nav-item">Inputs</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <main>
+            <!-- Tabs Lineales -->
+            <section class="tabs-container">
+                <h2>Tabs Lineales</h2>
+                <div class="tabs lineal">
+                    <button class="tab-button active" data-tab="tab-1">Tab
+                        1</button>
+                    <button class="tab-button" data-tab="tab-2">Tab 2</button>
+                    <button class="tab-button" data-tab="tab-3">Tab 3</button>
+                </div>
+                <div class="tabs-content">
+                    <div id="tab-1" class="tab-content active">
+                        <h3>Contenido Tab 1</h3>
+                        <p>Este es el contenido de la pestaña 1.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        <h3>Contenido Tab 2</h3>
+                        <p>Este es el contenido de la pestaña 2.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content">
+                        <h3>Contenido Tab 3</h3>
+                        <p>Este es el contenido de la pestaña 3.</p>
+                    </div>
+                </div>
+            </section>
+            <pre>
+    <code>
+        &lt;section class="tabs-container"&gt;
+            &lt;h2&gt;Tabs Lineales&lt;/h2&gt;
+            &lt;div class="tabs lineal"&gt;
+                &lt;button class="tab-button active" data-tab="tab-1"&gt;Tab 1&lt;/button&gt;
+                &lt;button class="tab-button" data-tab="tab-2"&gt;Tab 2&lt;/button&gt;
+                &lt;button class="tab-button" data-tab="tab-3"&gt;Tab 3&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="tabs-content"&gt;
+                &lt;div id="tab-1" class="tab-content active"&gt;
+                    &lt;h3&gt;Contenido Tab 1&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 1.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="tab-2" class="tab-content"&gt;
+                    &lt;h3&gt;Contenido Tab 2&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 2.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="tab-3" class="tab-content"&gt;
+                    &lt;h3&gt;Contenido Tab 3&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 3.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    </code>
+</pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Tabs Rellenos -->
+            <section class="tabs-container">
+                <h2>Tabs Rellenos</h2>
+                <div class="tabs filled">
+                    <button class="tab-button active" data-tab="tab-1">Tab
+                        1</button>
+                    <button class="tab-button" data-tab="tab-2">Tab 2</button>
+                    <button class="tab-button" data-tab="tab-3">Tab 3</button>
+                </div>
+                <div class="tabs-content">
+                    <div id="tab-1" class="tab-content active">
+                        <h3>Contenido Tab 1</h3>
+                        <p>Este es el contenido de la pestaña 1.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        <h3>Contenido Tab 2</h3>
+                        <p>Este es el contenido de la pestaña 2.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content">
+                        <h3>Contenido Tab 3</h3>
+                        <p>Este es el contenido de la pestaña 3.</p>
+                    </div>
+                </div>
+            </section>
+            <pre>
+    <code>
+        &lt;section class="tabs-container"&gt;
+            &lt;h2&gt;Tabs Rellenos&lt;/h2&gt;
+            &lt;div class="tabs filled"&gt;
+                &lt;button class="tab-button active" data-tab="tab-1"&gt;Tab 1&lt;/button&gt;
+                &lt;button class="tab-button" data-tab="tab-2"&gt;Tab 2&lt;/button&gt;
+                &lt;button class="tab-button" data-tab="tab-3"&gt;Tab 3&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="tabs-content"&gt;
+                &lt;div id="tab-1" class="tab-content active"&gt;
+                    &lt;h3&gt;Contenido Tab 1&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 1.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="tab-2" class="tab-content"&gt;
+                    &lt;h3&gt;Contenido Tab 2&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 2.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="tab-3" class="tab-content"&gt;
+                    &lt;h3&gt;Contenido Tab 3&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 3.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    </code>
+</pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Tabs con Bordes Redondeados -->
+            <section class="tabs-container">
+                <h2>Tabs con Bordes Redondeados</h2>
+                <div class="tabs rounded">
+                    <button class="tab-button active" data-tab="tab-1">Tab
+                        1</button>
+                    <button class="tab-button" data-tab="tab-2">Tab 2</button>
+                    <button class="tab-button" data-tab="tab-3">Tab 3</button>
+                </div>
+                <div class="tabs-content">
+                    <div id="tab-1" class="tab-content active">
+                        <h3>Contenido Tab 1</h3>
+                        <p>Este es el contenido de la pestaña 1.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        <h3>Contenido Tab 2</h3>
+                        <p>Este es el contenido de la pestaña 2.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content">
+                        <h3>Contenido Tab 3</h3>
+                        <p>Este es el contenido de la pestaña 3.</p>
+                    </div>
+                </div>
+            </section>
+            <pre>
+    <code>
+        &lt;section class="tabs-container"&gt;
+            &lt;h2&gt;Tabs con Bordes Redondeados&lt;/h2&gt;
+            &lt;div class="tabs rounded"&gt;
+                &lt;button class="tab-button active" data-tab="tab-1"&gt;Tab 1&lt;/button&gt;
+                &lt;button class="tab-button" data-tab="tab-2"&gt;Tab 2&lt;/button&gt;
+                &lt;button class="tab-button" data-tab="tab-3"&gt;Tab 3&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="tabs-content"&gt;
+                &lt;div id="tab-1" class="tab-content active"&gt;
+                    &lt;h3&gt;Contenido Tab 1&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 1.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="tab-2" class="tab-content"&gt;
+                    &lt;h3&gt;Contenido Tab 2&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 2.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="tab-3" class="tab-content"&gt;
+                    &lt;h3&gt;Contenido Tab 3&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 3.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    </code>
+</pre>
+            <div class="separador-cuadricula"></div>
+            <!-- Tabs con Iconos -->
+            <section class="tabs-container">
+                <h2>Tabs con Iconos</h2>
+                <div class="tabs icon">
+                    <button class="tab-button active" data-tab="tab-1">
+                        <span class="icon">&#9733;</span> Tab 1
+                    </button>
+                    <button class="tab-button" data-tab="tab-2">
+                        <span class="icon">&#9734;</span> Tab 2
+                    </button>
+                    <button class="tab-button" data-tab="tab-3">
+                        <span class="icon">&#9829;</span> Tab 3
+                    </button>
+                </div>
+                <div class="tabs-content">
+                    <div id="tab-1" class="tab-content active">
+                        <h3>Contenido Tab 1</h3>
+                        <p>Este es el contenido de la pestaña 1.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        <h3>Contenido Tab 2</h3>
+                        <p>Este es el contenido de la pestaña 2.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content">
+                        <h3>Contenido Tab 3</h3>
+                        <p>Este es el contenido de la pestaña 3.</p>
+                    </div>
+                </div>
+            </section>
+            <pre>
+    <code>
+        &lt;section class="tabs-container"&gt;
+            &lt;h2&gt;Tabs con Iconos&lt;/h2&gt;
+            &lt;div class="tabs icon"&gt;
+                &lt;button class="tab-button active" data-tab="tab-1"&gt;
+                    &lt;span class="icon"&gt;&#9733;&lt;/span&gt; Tab 1
+                &lt;/button&gt;
+                &lt;button class="tab-button" data-tab="tab-2"&gt;
+                    &lt;span class="icon"&gt;&#9734;&lt;/span&gt; Tab 2
+                &lt;/button&gt;
+                &lt;button class="tab-button" data-tab="tab-3"&gt;
+                    &lt;span class="icon"&gt;&#9829;&lt;/span&gt; Tab 3
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="tabs-content"&gt;
+                &lt;div id="tab-1" class="tab-content active"&gt;
+                    &lt;h3&gt;Contenido Tab 1&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 1.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="tab-2" class="tab-content"&gt;
+                    &lt;h3&gt;Contenido Tab 2&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 2.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="tab-3" class="tab-content"&gt;
+                    &lt;h3&gt;Contenido Tab 3&lt;/h3&gt;
+                    &lt;p&gt;Este es el contenido de la pestaña 3.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    </code>
+</pre>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-3">
+            <div class="pie">
+                <section class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Legacy</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-section">
+                    <h3>Careers</h3>
+                    <ul>
+                        <li><a href="#">Job openings</a></li>
+                        <li><a href="#">Employee success</a></li>
+                        <li><a href="#">Benefits</a></li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+        <script src="../js/tabs.js"></script>
+    </body>
+
+</html>

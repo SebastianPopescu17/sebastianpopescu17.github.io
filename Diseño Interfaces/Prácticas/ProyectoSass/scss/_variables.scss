@@ -1,0 +1,61 @@
+// Colores principales
+    $primary-color: #5f9bd1;
+    $secondary-color: #f2a900;
+    $tertiary-color: #1e0688;
+    $fourth-color: #2a9d8f; 
+    $fifth-color: #6a4c9c; 
+
+    // Variantes claras
+    $light-primary-color: lighten($primary-color, 15%); 
+    $light-secondary-color: lighten($secondary-color, 15%); 
+    $light-tertiary-color: lighten($tertiary-color, 15%); 
+    $light-fourth-color: lighten($fourth-color, 15%); 
+    $light-fifth-color: lighten($fifth-color, 15%); 
+
+    // Color de fuentes
+    $fuente-primaria: #1e0688; 
+    $fuente-secundaria: #ffffff; 
+    $fuente-terciaria: #f7f7f7; 
+
+    // FUENTES
+    $primary-font: 'New Times Roman', Times, sans-serif;
+    $secondary-font: arial, verdana, serif;
+
+    // TAMAÑOS
+    $titulo-grande: 40px;
+    $titulo-mediano: 30px;
+    $titulo-pequeño: 20px;
+
+    $encabezado-grande: 32px;
+    $encabezado-mediano: 26px;
+    $encabezado-pequeño: 18px;
+
+    $cuerpo-grande: 24px;
+    $cuerpo-mediano: 20px;
+    $cuerpo-pequeño: 16px;
+
+    // Estilos de Bordes
+    $border-radius: 5px;
+
+    // Espaciado
+    $padding-small: 10px;
+    $padding-medium: 20px;
+    $padding-large: 30px;
+    $margin-small: 10px;
+    $margin-medium: 20px;
+    $margin-large: 30px;
+
+    // Sombras
+    $box-shadow-light: 0 2px 5px rgba(0, 0, 0, 0.1);
+    $box-shadow-medium: 0 4px 10px rgba(0, 0, 0, 0.2);
+    $box-shadow-dark: 0 6px 15px rgba(0, 0, 0, 0.3);
+
+    // Transparencias
+    $opacity-high: 0.9;
+    $opacity-medium: 0.6;
+    $opacity-low: 0.3;
+
+    // Animaciones
+    $transition-fast: 0.3s ease;
+    $transition-medium: 0.5s ease;
+    $transition-slow: 0.7s ease;

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Framework</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="principal">
+        <h1>Mi Framework</h1>
+    </header>
+    <!-- Navegación -->
+    <nav class="barranav">
+        <ul>
+            <li><a href="alertas.html" class="nav-item">Alertas </a></li>
+            <li><a href="cards.html" class="nav-item">Cards </a></li>
+            <li><a href="separadores.html" class="nav-item">Separadores </a></li>
+            <li><a href="iconos.html" class="nav-item">Iconos </a></li>
+            <li><a href="loaders.html" class="nav-item">Loaders </a></li>
+            <li><a href="botones.html" class="nav-item"> Botones</a></li>
+            <li><a href="navbars.html" class="nav-item"> Navbars</a></li>
+            <li><a href="sliders.html" class="nav-item"> Sliders</a></li>
+            <li><a href="tabs.html" class="nav-item">Tabs</a></li>
+            <li><a href="inputs.html" class="nav-item">Inputs</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Cards Section -->
+        <section class="cards-section">
+            <!-- Card con Imagen de Fondo -->
+            <div class="card card-fondo-imagen">
+                <h2>Card de Fondo Imagen</h2>
+                <p>Texto sobre una imagen de fondo.</p>
+            </div>
+            <pre>
+        <code>
+            &lt;div class="card card-fondo-imagen"&gt;
+                &lt;h2&gt;Card de Fondo Imagen&lt;/h2&gt;
+                &lt;p&gt;Texto sobre una imagen de fondo.&lt;/p&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+            <!-- Card Flotante -->
+            <div class="card card-tarjeta-flotante">
+                <img src="https://picsum.photos/300/200?random=2" alt="Imagen Card 2" />
+                <h2>Card Flotante</h2>
+                <p>Card con efecto de sombra flotante y imagen arriba.</p>
+            </div>
+            <pre>
+        <code>
+            &lt;div class="card card-tarjeta-flotante"&gt;
+                &lt;img src="https://picsum.photos/300/200?random=2" alt="Imagen Card 2" /&gt;
+                &lt;h2&gt;Card Flotante&lt;/h2&gt;
+                &lt;p&gt;Card con efecto de sombra flotante y imagen arriba.&lt;/p&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+            <!-- Card con Imagen Lateral -->
+            <div class="card card-imagen-lateral">
+                <img src="https://picsum.photos/200/200?random=3" alt="Imagen Card 3" />
+                <div class="card-texto">
+                    <h2>Card con Imagen Lateral</h2>
+                    <p>Imagen a la izquierda y texto a la derecha.</p>
+                </div>
+            </div>
+            <pre>
+        <code>
+            &lt;div class="card card-imagen-lateral"&gt;
+                &lt;img src="https://picsum.photos/200/200?random=3" alt="Imagen Card 3" /&gt;
+                &lt;div class="card-texto"&gt;
+                    &lt;h2&gt;Card con Imagen Lateral&lt;/h2&gt;
+                    &lt;p&gt;Imagen a la izquierda y texto a la derecha.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+            <!-- Card con Icono de Llamada a la Acción -->
+            <div class="card card-icono-cta">
+                <div class="card-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h2>Contacta con Nosotros</h2>
+                <p>Haz clic aquí para recibir atención personalizada.</p>
+                <button class="btn-cta">Llamar</button>
+            </div>
+            <pre>
+        <code>
+            &lt;div class="card card-icono-cta"&gt;
+                &lt;div class="card-icon"&gt;
+                    &lt;i class="fas fa-phone-alt"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;h2&gt;Contacta con Nosotros&lt;/h2&gt;
+                &lt;p&gt;Haz clic aquí para recibir atención personalizada.&lt;/p&gt;
+                &lt;button class="btn-cta"&gt;Llamar&lt;/button&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+            <!-- Card con Animación de Entrada -->
+            <div class="card card-animacion-entrada">
+                <h2>Card Animada</h2>
+                <p>Texto de la tarjeta con animación de entrada.</p>
+            </div>
+            <pre>
+        <code>
+            &lt;div class="card card-animacion-entrada"&gt;
+                &lt;h2&gt;Card Animada&lt;/h2&gt;
+                &lt;p&gt;Texto de la tarjeta con animación de entrada.&lt;/p&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+            <div class="separador-cuadricula"></div>
+
+            <!-- Card estilo Tarjeta de Presentación -->
+            <div class="card card-tarjeta-presentacion">
+                <div class="card-header">
+                    <h3>Nombre del Usuario</h3>
+                    <p>Profesión o Título</p>
+                </div>
+                <div class="card-body">
+                    <p>Breve descripción del usuario o de lo que se ofrece.</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-contact">Contactar</button>
+                </div>
+            </div>
+            <pre>
+        <code>
+            &lt;div class="card card-tarjeta-presentacion"&gt;
+                &lt;div class="card-header"&gt;
+                    &lt;h3&gt;Nombre del Usuario&lt;/h3&gt;
+                    &lt;p&gt;Profesión o Título&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                    &lt;p&gt;Breve descripción del usuario o de lo que se ofrece.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="card-footer"&gt;
+                    &lt;button class="btn-contact"&gt;Contactar&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="pie">
+            <section class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Hosting</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Legacy</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>Careers</h3>
+                <ul>
+                    <li><a href="#">Job openings</a></li>
+                    <li><a href="#">Employee success</a></li>
+                    <li><a href="#">Benefits</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>

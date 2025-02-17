@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; 
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.cabecera {
+    background-color: darkorange;
+    display: flex;
+    height: 100px;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+        h1 {   
+            margin-left: 250px;
+            font-size: 2rem;
+            color: black;
+}
+}
+
+.principal {
+    background-color: rgb(236, 192, 47);
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parallax1, .parallax2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.parallax1 {
+    background-image: url("img/wine-house-2110737_1280.jpg");
+    min-height: 700px;
+}
+
+.parallax2 {
+    background-image: url("img/wines-1761613_1280.jpg");
+    min-height: 900px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+}
+
+.imagenescard, .videoscard, .animacionescard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px black;
+    margin-bottom: 40px;
+    width: 80%;
+    max-width: 800px;
+    align-self: center;
+    padding: 20px;
+}
+
+.imagenescard img, .videoscard video, .animacionescard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+   
+}
+.imagenescard, .videoscard{
+    .botones {
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+        align-items: end;
+    }
+    
+    .botones button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .botones button:hover {
+        background-color: darkorange;
+    }
+}
+
+
+.animaciones {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eba47b;
+    padding: 20px 0;
+}
+
+.animaciones img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallina {
+    animation: rotateZoom 3s ease-out 0s infinite;
+}
+
+.copa {
+    animation: slidePop 3s ease-out 0s infinite;
+}
+
+.animada {
+    animation: flipZoom 3s ease-out 0s infinite;
+}
+
+.uvas {
+    animation: sparkleGlow 3s ease-in-out 0s infinite;
+}
+
+.pie {
+    background-color: darkorange;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.pie div {
+    flex: 1;
+    margin: 10px;
+}
+
+.pie p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.pie ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pie li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.pie li:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes rotateZoom {
+    0% {
+        transform: rotate(0deg) scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidePop {
+    0% {
+        transform: translateX(-100%) scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(20px) scale(1.1);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes flipZoom {
+    0% {
+        transform: rotateY(0deg) scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: rotateY(180deg) scale(1.1);
+    }
+    100% {
+        transform: rotateY(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes sparkleGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+        transform: scale(1.1);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        transform: scale(1);
+    }
+}
